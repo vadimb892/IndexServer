@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;IndexServer: &#x202A;Клас ProtectedServer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;IndexServer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Пошук','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Загальнодоступні елементи</a> &#124;
+<a href="#pub-static-attribs">Статичні загальнодоступні данні</a> &#124;
+<a href="class_protected_server-members.html">Список всіх елементів</a>  </div>
+  <div class="headertitle">
+<div class="title">Клас ProtectedServer</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>&#x202A;Представляє серверну частину усієї системи проекту і містить для цього усі основні компоненти, отримує підключення клієнтів у основному потоці, передає їхні дані пулу потоків у вигляді окремого завдання, слідкує в окремому сервісному потоці за виключеннями.  
+ <a href="class_protected_server.html#details">Детальніше...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_protected_server_8h_source.html">ProtectedServer.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Загальнодоступні елементи</h2></td></tr>
+<tr class="memitem:a89d9429bd2263219215729dd48b3af94"><td class="memItemLeft" align="right" valign="top"><a id="a89d9429bd2263219215729dd48b3af94"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_protected_server.html#a89d9429bd2263219215729dd48b3af94">ProtectedServer</a> ()</td></tr>
+<tr class="memdesc:a89d9429bd2263219215729dd48b3af94"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Конструктор класу <a class="el" href="class_protected_server.html" title="&#x202A;Представляє серверну частину усієї системи проекту і містить для цього усі основні компоненти,...">ProtectedServer</a>. <br /></td></tr>
+<tr class="separator:a89d9429bd2263219215729dd48b3af94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b0fc95ad1e5ebdd362aefdaf7ce938"><td class="memItemLeft" align="right" valign="top"><a id="a66b0fc95ad1e5ebdd362aefdaf7ce938"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_protected_server.html#a66b0fc95ad1e5ebdd362aefdaf7ce938">loop</a> ()</td></tr>
+<tr class="memdesc:a66b0fc95ad1e5ebdd362aefdaf7ce938"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Цикл основного потоку, у якому приймаються підключення і передаються дані у чергу ThreadPool::tasks. <br /></td></tr>
+<tr class="separator:a66b0fc95ad1e5ebdd362aefdaf7ce938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba62e7ad0c9e02473b9c9609660421f1"><td class="memItemLeft" align="right" valign="top"><a id="aba62e7ad0c9e02473b9c9609660421f1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_protected_server.html#aba62e7ad0c9e02473b9c9609660421f1">test</a> (long maxThreadsCount, long queriesCount)</td></tr>
+<tr class="memdesc:aba62e7ad0c9e02473b9c9609660421f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Виконує тестування швидкодії для заданої кількості потоків і кількості запитів. <br /></td></tr>
+<tr class="separator:aba62e7ad0c9e02473b9c9609660421f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80907e50dc888247d5767b7eb42215bc"><td class="memItemLeft" align="right" valign="top"><a id="a80907e50dc888247d5767b7eb42215bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_protected_server.html#a80907e50dc888247d5767b7eb42215bc">interact</a> ()</td></tr>
+<tr class="memdesc:a80907e50dc888247d5767b7eb42215bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Запускає у циклі сеанс взаємодії користувача і серверу через консоль, дозволяє тільки виконувати запити. <br /></td></tr>
+<tr class="separator:a80907e50dc888247d5767b7eb42215bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Статичні загальнодоступні данні</h2></td></tr>
+<tr class="memitem:ad7863b0e161795eafb69e77c7ea213bd"><td class="memItemLeft" align="right" valign="top"><a id="ad7863b0e161795eafb69e77c7ea213bd"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_protected_server.html#ad7863b0e161795eafb69e77c7ea213bd">siteCount</a> = 10</td></tr>
+<tr class="memdesc:ad7863b0e161795eafb69e77c7ea213bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Значення за замовчуванням кількості необхідних сайтів. <br /></td></tr>
+<tr class="separator:ad7863b0e161795eafb69e77c7ea213bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Детальний опис</h2>
+<div class="textblock"><p class="DocNodeLTR">Представляє серверну частину усієї системи проекту і містить для цього усі основні компоненти, отримує підключення клієнтів у основному потоці, передає їхні дані пулу потоків у вигляді окремого завдання, слідкує в окремому сервісному потоці за виключеннями. </p>
+</div><hr/>Документація цих класів була створена з файлів:<ul>
+<li>C:/Users/vadim/source/repos/IndexServer/IndexServer/<a class="el" href="_protected_server_8h_source.html">ProtectedServer.h</a></li>
+<li>C:/Users/vadim/source/repos/IndexServer/IndexServer/ProtectedServer.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

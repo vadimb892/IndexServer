@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;IndexServer: &#x202A;Текст програми C:/Users/vadim/source/repos/IndexServer/IndexServer/ProtectedServer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;IndexServer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Пошук','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cc26acad3bc72dbfa207133a9b01e56c.html">&#x202A;IndexServer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ProtectedServer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span> </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;StringFunctions.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;VectorFunctions.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;InvertedIndex.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;ThreadPool.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;SearchFunctions.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;SiteFilter.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;Client.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;json/json.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;condition_variable&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef FINISH</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define FINISH true</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define WORK false</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_task.html">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_task.html">Task</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_task.html#a83d1f0cc60750e8446a187203d406e2f">   25</a></span>&#160;    std::wstring* <a class="code" href="struct_task.html#a83d1f0cc60750e8446a187203d406e2f">result</a> = <span class="keyword">nullptr</span>; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_task.html#a6d512882d655c4da3a51b7931e8e2781">   26</a></span>&#160;    <a class="code" href="class_client.html">Client</a> <a class="code" href="struct_task.html#a6d512882d655c4da3a51b7931e8e2781">client</a>; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_task.html#afa5f3509b8b8d407552622d4f75bce05">   27</a></span>&#160;    <a class="code" href="class_inverted_index.html">InvertedIndex</a>* <a class="code" href="struct_task.html#afa5f3509b8b8d407552622d4f75bce05">index</a> = <span class="keyword">nullptr</span>; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_task.html#a0124baefe44a3d094ea8debc86cfb6a2">   28</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_task.html#a0124baefe44a3d094ea8debc86cfb6a2">resultCount</a> = 0; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> SET_NONBLOCK(SOCKET* socket);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">int</span> clientTaskHandler(<a class="code" href="struct_task.html">Task</a> task);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">int</span> consoleTaskHandler(<a class="code" href="struct_task.html">Task</a> task);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">double</span> countDuration(std::function&lt;<span class="keywordtype">void</span>(T, T)&gt; <span class="keyword">function</span>, T _1, T _2) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">auto</span> start = std::chrono::steady_clock::now();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">function</span>(_1, _2);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">auto</span> finish = std::chrono::steady_clock::now();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::chrono::duration&lt;double&gt; period = finish - start;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> period.count() * 1000;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;std::wstring randomString(std::size_t length);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_protected_server.html">   88</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_protected_server.html">ProtectedServer</a> {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_protected_server.html#ad7863b0e161795eafb69e77c7ea213bd">   90</a></span>&#160;    <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_protected_server.html#ad7863b0e161795eafb69e77c7ea213bd">siteCount</a> = 10; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="class_protected_server.html#a89d9429bd2263219215729dd48b3af94">ProtectedServer</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_protected_server.html#a66b0fc95ad1e5ebdd362aefdaf7ce938">loop</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_protected_server.html#aba62e7ad0c9e02473b9c9609660421f1">test</a>(<span class="keywordtype">long</span> maxThreadsCount, <span class="keywordtype">long</span> queriesCount);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_protected_server.html#a80907e50dc888247d5767b7eb42215bc">interact</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> port = 1111; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    SOCKET listenSocket = INVALID_SOCKET; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">int</span> threadCount = 4; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    std::future&lt;bool&gt; serviceThread; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    std::future&lt;bool&gt; asyncJoin;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="class_inverted_index.html">InvertedIndex</a> index; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="class_thread_pool.html">ThreadPool&lt;Task&gt;</a> pool = <a class="code" href="class_thread_pool.html">ThreadPool&lt;Task&gt;</a>(consoleTaskHandler, threadCount); </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="class_client.html">Client</a> handleConnection();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="ttc" id="aclass_client_html"><div class="ttname"><a href="class_client.html">Client</a></div><div class="ttdoc">Використовується як представлення клієнта в середині сервера і містить набір методів для встановлення...</div><div class="ttdef"><b>Definition:</b> Client.h:73</div></div>
+<div class="ttc" id="aclass_inverted_index_html"><div class="ttname"><a href="class_inverted_index.html">InvertedIndex</a></div><div class="ttdoc">Представляє інвертований індекс і містить для цього усі необхідні компоненти.</div><div class="ttdef"><b>Definition:</b> InvertedIndex.h:83</div></div>
+<div class="ttc" id="aclass_protected_server_html"><div class="ttname"><a href="class_protected_server.html">ProtectedServer</a></div><div class="ttdoc">Представляє серверну частину усієї системи проекту і містить для цього усі основні компоненти,...</div><div class="ttdef"><b>Definition:</b> ProtectedServer.h:88</div></div>
+<div class="ttc" id="aclass_protected_server_html_a66b0fc95ad1e5ebdd362aefdaf7ce938"><div class="ttname"><a href="class_protected_server.html#a66b0fc95ad1e5ebdd362aefdaf7ce938">ProtectedServer::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Цикл основного потоку, у якому приймаються підключення і передаються дані у чергу ThreadPool::tasks.</div><div class="ttdef"><b>Definition:</b> ProtectedServer.cpp:26</div></div>
+<div class="ttc" id="aclass_protected_server_html_a80907e50dc888247d5767b7eb42215bc"><div class="ttname"><a href="class_protected_server.html#a80907e50dc888247d5767b7eb42215bc">ProtectedServer::interact</a></div><div class="ttdeci">void interact()</div><div class="ttdoc">Запускає у циклі сеанс взаємодії користувача і серверу через консоль, дозволяє тільки виконувати запи...</div><div class="ttdef"><b>Definition:</b> ProtectedServer.cpp:75</div></div>
+<div class="ttc" id="aclass_protected_server_html_a89d9429bd2263219215729dd48b3af94"><div class="ttname"><a href="class_protected_server.html#a89d9429bd2263219215729dd48b3af94">ProtectedServer::ProtectedServer</a></div><div class="ttdeci">ProtectedServer()</div><div class="ttdoc">Конструктор класу ProtectedServer.</div><div class="ttdef"><b>Definition:</b> ProtectedServer.cpp:3</div></div>
+<div class="ttc" id="aclass_protected_server_html_aba62e7ad0c9e02473b9c9609660421f1"><div class="ttname"><a href="class_protected_server.html#aba62e7ad0c9e02473b9c9609660421f1">ProtectedServer::test</a></div><div class="ttdeci">void test(long maxThreadsCount, long queriesCount)</div><div class="ttdoc">Виконує тестування швидкодії для заданої кількості потоків і кількості запитів.</div><div class="ttdef"><b>Definition:</b> ProtectedServer.cpp:41</div></div>
+<div class="ttc" id="aclass_protected_server_html_ad7863b0e161795eafb69e77c7ea213bd"><div class="ttname"><a href="class_protected_server.html#ad7863b0e161795eafb69e77c7ea213bd">ProtectedServer::siteCount</a></div><div class="ttdeci">static const int siteCount</div><div class="ttdoc">Значення за замовчуванням кількості необхідних сайтів.</div><div class="ttdef"><b>Definition:</b> ProtectedServer.h:90</div></div>
+<div class="ttc" id="aclass_thread_pool_html"><div class="ttname"><a href="class_thread_pool.html">ThreadPool&lt; Task &gt;</a></div></div>
+<div class="ttc" id="astruct_task_html"><div class="ttname"><a href="struct_task.html">Task</a></div><div class="ttdoc">Контейнер для даних, що необхідні для обслуговування окремого клієнта.</div><div class="ttdef"><b>Definition:</b> ProtectedServer.h:24</div></div>
+<div class="ttc" id="astruct_task_html_a0124baefe44a3d094ea8debc86cfb6a2"><div class="ttname"><a href="struct_task.html#a0124baefe44a3d094ea8debc86cfb6a2">Task::resultCount</a></div><div class="ttdeci">int resultCount</div><div class="ttdoc">Кількість сайтів, що необхідна клієнту.</div><div class="ttdef"><b>Definition:</b> ProtectedServer.h:28</div></div>
+<div class="ttc" id="astruct_task_html_a6d512882d655c4da3a51b7931e8e2781"><div class="ttname"><a href="struct_task.html#a6d512882d655c4da3a51b7931e8e2781">Task::client</a></div><div class="ttdeci">Client client</div><div class="ttdoc">Представлення клієнта на стороні сервера.</div><div class="ttdef"><b>Definition:</b> ProtectedServer.h:26</div></div>
+<div class="ttc" id="astruct_task_html_a83d1f0cc60750e8446a187203d406e2f"><div class="ttname"><a href="struct_task.html#a83d1f0cc60750e8446a187203d406e2f">Task::result</a></div><div class="ttdeci">std::wstring * result</div><div class="ttdoc">Вказівник для повернення результату за потреби туди, де було створено завдання</div><div class="ttdef"><b>Definition:</b> ProtectedServer.h:25</div></div>
+<div class="ttc" id="astruct_task_html_afa5f3509b8b8d407552622d4f75bce05"><div class="ttname"><a href="struct_task.html#afa5f3509b8b8d407552622d4f75bce05">Task::index</a></div><div class="ttdeci">InvertedIndex * index</div><div class="ttdoc">Вказівник на інвертований індекс.</div><div class="ttdef"><b>Definition:</b> ProtectedServer.h:27</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

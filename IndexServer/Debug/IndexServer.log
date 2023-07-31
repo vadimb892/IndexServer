@@ -1,0 +1,6 @@
+﻿  Server.cpp
+C:\Users\vadim\source\repos\IndexServer\IndexServer\Server.cpp(75,38): warning C4244: '=': conversion from 'float' to 'long', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\Server.cpp(213,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\vadim\source\repos\IndexServer\IndexServer\Server.cpp(278,22): warning C4018: '>': signed/unsigned mismatch
+C:\Users\vadim\source\repos\IndexServer\IndexServer\Server.cpp(285,20): warning C4018: '<': signed/unsigned mismatch
+  IndexServer.vcxproj -> C:\Users\vadim\source\repos\IndexServer\Debug\IndexServer.exe

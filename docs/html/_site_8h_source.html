@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;IndexServer: &#x202A;Текст програми C:/Users/vadim/source/repos/IndexServer/IndexServer/Site.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;IndexServer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Пошук','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cc26acad3bc72dbfa207133a9b01e56c.html">&#x202A;IndexServer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Site.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SITE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SITE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;StringFunctions.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_site.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_site.html">Site</a> {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">const</span> <span class="keyword">static</span> std::wstring delimiter; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_site.html#a4119f95c45d57d6edf419169dea993f4">Site</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_site.html#a4119f95c45d57d6edf419169dea993f4">Site</a>(std::wstring _title, std::wstring _link, std::wstring _snippet);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::wstring <a class="code" href="class_site.html#a6082a0f50e8baae90dd1034321c7ff21">getTitle</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::wstring <a class="code" href="class_site.html#a78c3b3e77803d4039b2e7fcfa027395b">getLink</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::wstring <a class="code" href="class_site.html#a67a14ed5116b70a1079d21adf6a443eb">getSnippet</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::wstring <a class="code" href="class_site.html#abd7ed79dc71cf2c51a5804a9b19ef40e">toString</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_site.html">Site</a> <a class="code" href="class_site.html#aaa18a345f22963438f7de58c17b51992">toSite</a>(std::wstring <span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::wstring title = L<span class="stringliteral">&quot;&quot;</span>; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    std::wstring link = L<span class="stringliteral">&quot;&quot;</span>; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    std::wstring snippet = L<span class="stringliteral">&quot;&quot;</span>; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_site_html"><div class="ttname"><a href="class_site.html">Site</a></div><div class="ttdoc">Контейнер для інформації про окремий сайт, що отримана із функції Search::search.</div><div class="ttdef"><b>Definition:</b> Site.h:48</div></div>
+<div class="ttc" id="aclass_site_html_a4119f95c45d57d6edf419169dea993f4"><div class="ttname"><a href="class_site.html#a4119f95c45d57d6edf419169dea993f4">Site::Site</a></div><div class="ttdeci">Site()</div><div class="ttdoc">Конструктор класу Site.</div><div class="ttdef"><b>Definition:</b> Site.cpp:5</div></div>
+<div class="ttc" id="aclass_site_html_a6082a0f50e8baae90dd1034321c7ff21"><div class="ttname"><a href="class_site.html#a6082a0f50e8baae90dd1034321c7ff21">Site::getTitle</a></div><div class="ttdeci">std::wstring getTitle()</div><div class="ttdoc">Видає заголовок title.</div><div class="ttdef"><b>Definition:</b> Site.cpp:13</div></div>
+<div class="ttc" id="aclass_site_html_a67a14ed5116b70a1079d21adf6a443eb"><div class="ttname"><a href="class_site.html#a67a14ed5116b70a1079d21adf6a443eb">Site::getSnippet</a></div><div class="ttdeci">std::wstring getSnippet()</div><div class="ttdoc">Видає короткий опис snippet.</div><div class="ttdef"><b>Definition:</b> Site.cpp:21</div></div>
+<div class="ttc" id="aclass_site_html_a78c3b3e77803d4039b2e7fcfa027395b"><div class="ttname"><a href="class_site.html#a78c3b3e77803d4039b2e7fcfa027395b">Site::getLink</a></div><div class="ttdeci">std::wstring getLink()</div><div class="ttdoc">Видає посилання link.</div><div class="ttdef"><b>Definition:</b> Site.cpp:17</div></div>
+<div class="ttc" id="aclass_site_html_aaa18a345f22963438f7de58c17b51992"><div class="ttname"><a href="class_site.html#aaa18a345f22963438f7de58c17b51992">Site::toSite</a></div><div class="ttdeci">static Site toSite(std::wstring string)</div><div class="ttdoc">Перетворює строку у екземпляр класу Site.</div><div class="ttdef"><b>Definition:</b> Site.cpp:29</div></div>
+<div class="ttc" id="aclass_site_html_abd7ed79dc71cf2c51a5804a9b19ef40e"><div class="ttname"><a href="class_site.html#abd7ed79dc71cf2c51a5804a9b19ef40e">Site::toString</a></div><div class="ttdeci">std::wstring toString()</div><div class="ttdoc">Перетворює екземпляр класу Site у строку, об'єднуючи усі залежні змінні, Між змінними вставляється ро...</div><div class="ttdef"><b>Definition:</b> Site.cpp:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

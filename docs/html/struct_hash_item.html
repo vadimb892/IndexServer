@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;IndexServer: &#x202A;Структура HashItem</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;IndexServer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Пошук','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Загальнодоступні атрибути</a> &#124;
+<a href="struct_hash_item-members.html">Список всіх елементів</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура HashItem</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>&#x202A;Компонент списків, що містить відповідності ключ - значення, розмір значення та індекс наступного елемента у списку колізій  
+ <a href="struct_hash_item.html#details">Детальніше...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_hash_table_8h_source.html">HashTable.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Загальнодоступні атрибути</h2></td></tr>
+<tr class="memitem:a5266d6d008fef8653d49d1ce998ace4a"><td class="memItemLeft" align="right" valign="top"><a id="a5266d6d008fef8653d49d1ce998ace4a"></a>
+std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hash_item.html#a5266d6d008fef8653d49d1ce998ace4a">key</a></td></tr>
+<tr class="memdesc:a5266d6d008fef8653d49d1ce998ace4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Ключ за яким обчислюється індекс позиції значення у списку HashItem::items. <br /></td></tr>
+<tr class="separator:a5266d6d008fef8653d49d1ce998ace4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac590f265b9a6b0a43f47a0bed88d5344"><td class="memItemLeft" align="right" valign="top"><a id="ac590f265b9a6b0a43f47a0bed88d5344"></a>
+std::vector&lt; std::wstring &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hash_item.html#ac590f265b9a6b0a43f47a0bed88d5344">value</a></td></tr>
+<tr class="memdesc:ac590f265b9a6b0a43f47a0bed88d5344"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Значення у вигляді списку ресурсів. <br /></td></tr>
+<tr class="separator:ac590f265b9a6b0a43f47a0bed88d5344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3cd4efc93266793006baf685a0cbc71"><td class="memItemLeft" align="right" valign="top"><a id="af3cd4efc93266793006baf685a0cbc71"></a>
+long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hash_item.html#af3cd4efc93266793006baf685a0cbc71">byteSize</a> = 0</td></tr>
+<tr class="memdesc:af3cd4efc93266793006baf685a0cbc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Розмір значення. <br /></td></tr>
+<tr class="separator:af3cd4efc93266793006baf685a0cbc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4050fbbe329b77dd31f00b3315625993"><td class="memItemLeft" align="right" valign="top"><a id="a4050fbbe329b77dd31f00b3315625993"></a>
+long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hash_item.html#a4050fbbe329b77dd31f00b3315625993">next</a> = -1</td></tr>
+<tr class="memdesc:a4050fbbe329b77dd31f00b3315625993"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Індекс наступного екземпляру <a class="el" href="struct_hash_item.html" title="&#x202A;Компонент списків, що містить відповідності ключ - значення, розмір значення та індекс наступного еле...">HashItem</a> у списку HashItem::colisions, із яким відбулася колізія. <br /></td></tr>
+<tr class="separator:a4050fbbe329b77dd31f00b3315625993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Детальний опис</h2>
+<div class="textblock"><p class="DocNodeLTR">Компонент списків, що містить відповідності ключ - значення, розмір значення та індекс наступного елемента у списку колізій </p>
+<p class="DocNodeLTR">файлу за ключем. </p>
+</div><hr/>Документація цієї структури була створена з файлу:<ul>
+<li>C:/Users/vadim/source/repos/IndexServer/IndexServer/<a class="el" href="_hash_table_8h_source.html">HashTable.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

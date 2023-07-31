@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;IndexServer: &#x202A;Текст програми C:/Users/vadim/source/repos/IndexServer/IndexServer/HashTable.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;IndexServer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Пошук','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cc26acad3bc72dbfa207133a9b01e56c.html">&#x202A;IndexServer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">HashTable.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;VectorFunctions.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define ZERO LLONG_MAX</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_hash_item.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_hash_item.html">HashItem</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_hash_item.html#a5266d6d008fef8653d49d1ce998ace4a">   19</a></span>&#160;    std::wstring <a class="code" href="struct_hash_item.html#a5266d6d008fef8653d49d1ce998ace4a">key</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_hash_item.html#ac590f265b9a6b0a43f47a0bed88d5344">   20</a></span>&#160;    std::vector&lt;std::wstring&gt; <a class="code" href="struct_hash_item.html#ac590f265b9a6b0a43f47a0bed88d5344">value</a>; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_hash_item.html#af3cd4efc93266793006baf685a0cbc71">   21</a></span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="struct_hash_item.html#af3cd4efc93266793006baf685a0cbc71">byteSize</a> = 0; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_hash_item.html#a4050fbbe329b77dd31f00b3315625993">   22</a></span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="struct_hash_item.html#a4050fbbe329b77dd31f00b3315625993">next</a> = -1; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_hash_table.html">  122</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hash_table.html">HashTable</a> {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_hash_table.html#a56c8ae42f730255b030656b38a7097e3">  124</a></span>&#160;    <span class="keyword">const</span> <span class="keyword">static</span> std::wstring <a class="code" href="class_hash_table.html#a56c8ae42f730255b030656b38a7097e3">delimiter</a>;  </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="class_hash_table.html#a2a01b81f35c387186cc49bff3c68c4c6">  128</a></span>&#160;    <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="class_hash_table.html#a2a01b81f35c387186cc49bff3c68c4c6">cellSize</a>;  </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="class_hash_table.html#a88009283a0efff89321a5e40b149e0aa">HashTable</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> size);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="class_hash_table.html#a88009283a0efff89321a5e40b149e0aa">HashTable</a>(<span class="keyword">const</span> <a class="code" href="class_hash_table.html">HashTable</a>&amp; other);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="class_hash_table.html">HashTable</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_hash_table.html">HashTable</a>&amp; other);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_hash_table.html#adb1a325f84e15a2c0a0727e5b883f148">add</a>(std::wstring key, std::vector&lt;std::wstring&gt; value);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    std::vector&lt;std::wstring&gt; <a class="code" href="class_hash_table.html#af595b17f8a25b37bf4a73b584985ecb2">get</a>(std::wstring key);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_hash_table.html#a8158447cbbb6a1c8bf0e6f72b82ae004">increaseTable</a>();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_hash_table.html#a72dcb5784272934ecf4a792e7620129d">saveTable</a>(std::wstring path);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_hash_table.html#a582cb3d3cfbbdea769ca5a06d5272a4a">hashFunction</a>(std::wstring key, <span class="keywordtype">long</span> <span class="keywordtype">long</span> size);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_hash_table.html#a5ca7a861e3e0de6be2891508d1a8295f">getCapacity</a>();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_hash_table.html#a7fd8a755cae8ddaa21e18eabea842656">getCount</a>();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_hash_table.html#afaf71f1eff1e5536f5dc2ee557ef0847">getSize</a>();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_hash_table.html#af80739a63ed89fb5e729bd787d2469da">getPercent</a>();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> percent = 0.75; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> maxCapacity = 2000000000; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    std::atomic&lt;long long&gt; size; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    std::atomic&lt;long long&gt; count = 0; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    std::atomic&lt;long long&gt; currentCapacity = 0; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    std::vector&lt;HashItem&gt; items; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    std::vector&lt;HashItem&gt; colisions; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    std::mutex itemsMutex; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    std::mutex colisionsMutex; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    std::mutex sizeMutex;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    std::mutex countMutex;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    std::mutex currentCapacityMutex;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    std::vector&lt;HashItem&gt; createNewVector(<span class="keywordtype">long</span> <span class="keywordtype">long</span> s);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> handleCollision(<a class="code" href="struct_hash_item.html">HashItem</a> item, <span class="keywordtype">long</span> <span class="keywordtype">long</span> colisionIndex);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> getItemCapacity(<a class="code" href="struct_hash_item.html">HashItem</a> item);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    std::array&lt;long long, 4&gt; itemToArray(<a class="code" href="struct_hash_item.html">HashItem</a> item,<span class="keywordtype">size_t</span> <a class="code" href="class_hash_table.html#a2a01b81f35c387186cc49bff3c68c4c6">cellSize</a>, <span class="keywordtype">long</span> <span class="keywordtype">long</span> valueAddress);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    std::wstring writeVectorToString(std::vector&lt;std::wstring&gt; vector);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;};</div>
+<div class="ttc" id="aclass_hash_table_html"><div class="ttname"><a href="class_hash_table.html">HashTable</a></div><div class="ttdoc">Представляє функціонал і контейнер хеш таблиці, ключі й значення яких є строками.</div><div class="ttdef"><b>Definition:</b> HashTable.h:122</div></div>
+<div class="ttc" id="aclass_hash_table_html_a2a01b81f35c387186cc49bff3c68c4c6"><div class="ttname"><a href="class_hash_table.html#a2a01b81f35c387186cc49bff3c68c4c6">HashTable::cellSize</a></div><div class="ttdeci">static const size_t cellSize</div><div class="ttdoc">Розмір елементарної структури даних для розміщення кожного значення HashItem у майбутніх файлах.</div><div class="ttdef"><b>Definition:</b> HashTable.h:128</div></div>
+<div class="ttc" id="aclass_hash_table_html_a56c8ae42f730255b030656b38a7097e3"><div class="ttname"><a href="class_hash_table.html#a56c8ae42f730255b030656b38a7097e3">HashTable::delimiter</a></div><div class="ttdeci">static const std::wstring delimiter</div><div class="ttdoc">Розділювач між окремими елементами списку HashItem::value.</div><div class="ttdef"><b>Definition:</b> HashTable.h:124</div></div>
+<div class="ttc" id="aclass_hash_table_html_a582cb3d3cfbbdea769ca5a06d5272a4a"><div class="ttname"><a href="class_hash_table.html#a582cb3d3cfbbdea769ca5a06d5272a4a">HashTable::hashFunction</a></div><div class="ttdeci">static long long hashFunction(std::wstring key, long long size)</div><div class="ttdoc">Хеш функція, що перетворює ключ-строку у long long, що дозволяє розподілити рівномірно ключі у списку...</div><div class="ttdef"><b>Definition:</b> HashTable.cpp:127</div></div>
+<div class="ttc" id="aclass_hash_table_html_a5ca7a861e3e0de6be2891508d1a8295f"><div class="ttname"><a href="class_hash_table.html#a5ca7a861e3e0de6be2891508d1a8295f">HashTable::getCapacity</a></div><div class="ttdeci">long long getCapacity()</div><div class="ttdoc">Повертає поточний об'єм записаних у пам'яті даних із змінної HashTable::currentCapacity.</div><div class="ttdef"><b>Definition:</b> HashTable.cpp:50</div></div>
+<div class="ttc" id="aclass_hash_table_html_a72dcb5784272934ecf4a792e7620129d"><div class="ttname"><a href="class_hash_table.html#a72dcb5784272934ecf4a792e7620129d">HashTable::saveTable</a></div><div class="ttdeci">void saveTable(std::wstring path)</div><div class="ttdoc">Збереження у накопичувачі даних списків у конкретному форматі.</div><div class="ttdef"><b>Definition:</b> HashTable.cpp:248</div></div>
+<div class="ttc" id="aclass_hash_table_html_a7fd8a755cae8ddaa21e18eabea842656"><div class="ttname"><a href="class_hash_table.html#a7fd8a755cae8ddaa21e18eabea842656">HashTable::getCount</a></div><div class="ttdeci">long long getCount()</div><div class="ttdoc">Повертає поточну кількість записаних ключів із змінної HashTable::count.</div><div class="ttdef"><b>Definition:</b> HashTable.cpp:42</div></div>
+<div class="ttc" id="aclass_hash_table_html_a8158447cbbb6a1c8bf0e6f72b82ae004"><div class="ttname"><a href="class_hash_table.html#a8158447cbbb6a1c8bf0e6f72b82ae004">HashTable::increaseTable</a></div><div class="ttdeci">int increaseTable()</div><div class="ttdoc">Збільшення розміру таблиці і повний перепис списків.</div><div class="ttdef"><b>Definition:</b> HashTable.cpp:180</div></div>
+<div class="ttc" id="aclass_hash_table_html_a88009283a0efff89321a5e40b149e0aa"><div class="ttname"><a href="class_hash_table.html#a88009283a0efff89321a5e40b149e0aa">HashTable::HashTable</a></div><div class="ttdeci">HashTable(long long size)</div><div class="ttdoc">Конструктор класу HashTable.</div><div class="ttdef"><b>Definition:</b> HashTable.cpp:6</div></div>
+<div class="ttc" id="aclass_hash_table_html_adb1a325f84e15a2c0a0727e5b883f148"><div class="ttname"><a href="class_hash_table.html#adb1a325f84e15a2c0a0727e5b883f148">HashTable::add</a></div><div class="ttdeci">int add(std::wstring key, std::vector&lt; std::wstring &gt; value)</div><div class="ttdoc">Додає за обчисленим індексом нове значення:</div><div class="ttdef"><b>Definition:</b> HashTable.cpp:54</div></div>
+<div class="ttc" id="aclass_hash_table_html_af595b17f8a25b37bf4a73b584985ecb2"><div class="ttname"><a href="class_hash_table.html#af595b17f8a25b37bf4a73b584985ecb2">HashTable::get</a></div><div class="ttdeci">std::vector&lt; std::wstring &gt; get(std::wstring key)</div><div class="ttdoc">Видає за можливості існуючі значення за ключем.</div><div class="ttdef"><b>Definition:</b> HashTable.cpp:98</div></div>
+<div class="ttc" id="aclass_hash_table_html_af80739a63ed89fb5e729bd787d2469da"><div class="ttname"><a href="class_hash_table.html#af80739a63ed89fb5e729bd787d2469da">HashTable::getPercent</a></div><div class="ttdeci">double getPercent()</div><div class="ttdoc">Повертає пороговий % заповнення основного списку HashTable::items.</div><div class="ttdef"><b>Definition:</b> HashTable.cpp:46</div></div>
+<div class="ttc" id="aclass_hash_table_html_afaf71f1eff1e5536f5dc2ee557ef0847"><div class="ttname"><a href="class_hash_table.html#afaf71f1eff1e5536f5dc2ee557ef0847">HashTable::getSize</a></div><div class="ttdeci">long long getSize()</div><div class="ttdoc">Повертає поточний розмір основного списку HashTable::items, загальної кількості комірок із змінної Ha...</div><div class="ttdef"><b>Definition:</b> HashTable.cpp:38</div></div>
+<div class="ttc" id="astruct_hash_item_html"><div class="ttname"><a href="struct_hash_item.html">HashItem</a></div><div class="ttdoc">Компонент списків, що містить відповідності ключ - значення, розмір значення та індекс наступного еле...</div><div class="ttdef"><b>Definition:</b> HashTable.h:18</div></div>
+<div class="ttc" id="astruct_hash_item_html_a4050fbbe329b77dd31f00b3315625993"><div class="ttname"><a href="struct_hash_item.html#a4050fbbe329b77dd31f00b3315625993">HashItem::next</a></div><div class="ttdeci">long long next</div><div class="ttdoc">Індекс наступного екземпляру HashItem у списку HashItem::colisions, із яким відбулася колізія.</div><div class="ttdef"><b>Definition:</b> HashTable.h:22</div></div>
+<div class="ttc" id="astruct_hash_item_html_a5266d6d008fef8653d49d1ce998ace4a"><div class="ttname"><a href="struct_hash_item.html#a5266d6d008fef8653d49d1ce998ace4a">HashItem::key</a></div><div class="ttdeci">std::wstring key</div><div class="ttdoc">Ключ за яким обчислюється індекс позиції значення у списку HashItem::items.</div><div class="ttdef"><b>Definition:</b> HashTable.h:19</div></div>
+<div class="ttc" id="astruct_hash_item_html_ac590f265b9a6b0a43f47a0bed88d5344"><div class="ttname"><a href="struct_hash_item.html#ac590f265b9a6b0a43f47a0bed88d5344">HashItem::value</a></div><div class="ttdeci">std::vector&lt; std::wstring &gt; value</div><div class="ttdoc">Значення у вигляді списку ресурсів.</div><div class="ttdef"><b>Definition:</b> HashTable.h:20</div></div>
+<div class="ttc" id="astruct_hash_item_html_af3cd4efc93266793006baf685a0cbc71"><div class="ttname"><a href="struct_hash_item.html#af3cd4efc93266793006baf685a0cbc71">HashItem::byteSize</a></div><div class="ttdeci">long long byteSize</div><div class="ttdoc">Розмір значення.</div><div class="ttdef"><b>Definition:</b> HashTable.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
