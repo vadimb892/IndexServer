@@ -8,7 +8,7 @@
 #define UNIT_TEST_SERVER 2
 #define PERFOMANCE_TEST_SERVER 3
 
-#define CHOOSE 0
+#define CHOOSE 2
 
 int main(int argc, char* argv[]) {
 	Server s;

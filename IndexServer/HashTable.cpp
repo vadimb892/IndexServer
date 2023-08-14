@@ -228,12 +228,14 @@ int HashTable::increaseTable() {
 	long long newSize = 2 * oldSize;
 	long long index = 0;
 	long long mutexIndex = 0;
+	long long mutexCount = 1;
 	HashItem item, currentItem;
 	if (newSize >= maxCapacity) 
 		return 1;
 
 	long long oldMutexSize = itemsMutexes.size();
-	long long mutexCount = floor((double)newSize 
+	if (size > itemsSizeOnItemsMutexRatio)
+		mutexCount = floor((double)newSize 
 		/ (double)itemsSizeOnItemsMutexRatio);
 
 	std::vector<HashItem> newItemsVector = createNewVector(newSize);

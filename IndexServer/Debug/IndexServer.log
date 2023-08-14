@@ -1,6 +1,74 @@
-﻿  Server.cpp
-C:\Users\vadim\source\repos\IndexServer\IndexServer\Server.cpp(75,38): warning C4244: '=': conversion from 'float' to 'long', possible loss of data
-C:\Users\vadim\source\repos\IndexServer\IndexServer\Server.cpp(213,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\vadim\source\repos\IndexServer\IndexServer\Server.cpp(278,22): warning C4018: '>': signed/unsigned mismatch
-C:\Users\vadim\source\repos\IndexServer\IndexServer\Server.cpp(285,20): warning C4018: '<': signed/unsigned mismatch
+﻿  HashTable.cpp
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(14,27): warning C4244: 'argument': conversion from 'double' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(16,41): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(29,52): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(43,52): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(88,15): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(89,28): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(90,15): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(100,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(101,15): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(102,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(109,17): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(110,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(111,17): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(135,15): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(136,21): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(137,15): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(145,25): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(154,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(162,25): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(176,15): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(177,28): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(178,15): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(183,17): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(184,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(185,17): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(199,17): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(200,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(201,17): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(205,38): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(220,23): warning C4244: 'initializing': conversion from 'double' to '__int64', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(238,21): warning C4244: '=': conversion from 'double' to '__int64', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(247,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(248,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(249,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(253,32): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(259,20): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(260,21): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(261,20): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(265,19): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(272,20): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(275,32): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(281,20): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(282,21): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(283,20): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(286,19): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(291,34): warning C4018: '<': signed/unsigned mismatch
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(297,41): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(340,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(341,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(342,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(350,20): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(361,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(362,17): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(363,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(375,21): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+C:\Users\vadim\source\repos\IndexServer\IndexServer\HashTable.cpp(406,20): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
   IndexServer.vcxproj -> C:\Users\vadim\source\repos\IndexServer\Debug\IndexServer.exe
